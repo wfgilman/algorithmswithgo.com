@@ -25,6 +25,8 @@ func TestSum(t *testing.T) {
 		{[]int{31, 96, 10, 55, 41, 13, 92, 5}, 343},
 		{[]int{14, 39, 18, 39, 3, 29, 8, 29}, 179},
 		{[]int{-95, -46, -65, -63, 10}, -259},
+		{[]int{}, 0},
+		{nil, 0},
 	}
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("(%v)", tc.numbers), func(t *testing.T) {
