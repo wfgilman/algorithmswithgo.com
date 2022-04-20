@@ -31,6 +31,7 @@ func TestDecToBase(t *testing.T) {
 		{3735928559, 14, "276253DDD"},
 		{3735928559, 15, "16CEB1BDE"},
 		{3735928559, 16, "DEADBEEF"},
+		{0, 2, "0"},
 	}
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("%v to base %v", tc.dec, tc.base), func(t *testing.T) {
