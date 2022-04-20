@@ -15,6 +15,7 @@ func TestFindTwoThatSum(t *testing.T) {
 		{[]int{0, -1, 1}, 0, true},
 		{[]int{0, 1, 1}, 0, false},
 		{[]int{10, 1, 12, 3, 7, 2, 2, 1}, 4, true},
+		{[]int{10, 2, 3, 4, 5, 6, 7, 8, 9}, 19, true},
 	}
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("%v with sum %v", tc.numbers, tc.sum), func(t *testing.T) {
