@@ -1,5 +1,8 @@
 package module01
 
 func GCD(a, b int) int {
-	return 0
+	for b != 0 {
+		a, b = b, a%b
+	}
+	return a
 }
